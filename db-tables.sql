@@ -17,7 +17,7 @@ CREATE TABLE Product(
 	link varchar(255),
 	imgId varchar(255),
 	stock smallInt,
-	cost numeric(7, 2), 
+	price numeric(7, 2), 
 
 	PRIMARY KEY (productId)
 );
