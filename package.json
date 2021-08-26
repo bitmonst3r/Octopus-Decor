@@ -1,7 +1,7 @@
 {
   "name": "octopus-decor",
   "version": "0.0.0",
-  "description": "A place to buy octopus decor",
+  "description": "A webstore to buy octopus decor",
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www"
