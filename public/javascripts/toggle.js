@@ -1,3 +1,7 @@
+// filename: toggle.js
+// abstract: this file contains event listeners and functions tied to the 
+// navigation links in the landing page
+
 function classToggle() {
     const navs = document.querySelectorAll('.navbar-items')
     
