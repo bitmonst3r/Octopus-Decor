@@ -1,0 +1,20 @@
+{{> header}}
+
+<div class="login-container">
+    <form action="/index" method="get" id="login-form">
+
+        <label>Username</label> 
+        <input type="text" id="LI_username" name="username" placeholder="Username..">
+
+        <label>Password</label> 
+        <input type="password" id="LI_password" name="password" placeholder="Password..">
+
+        <button type="submit" id="login-button">Login</button>
+
+    </form>
+    <div id="login-error" class="alert alert-danger mt-3">¡Error logging in!</div>
+</div>
+
+{{> footer}}
+
+<script src="/javascripts/index.js"></script>

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Alegreya sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -7,14 +7,22 @@ body {
 }
 
 a:hover {
-  color: #904afa;
+  color: lightgray;
 }
 
 /* Global */
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
   overflow: hidden;
+}
+
+h1 {
+  color: #2c3229;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400px;
+  letter-spacing: 0px;
 }
 
 ul {
@@ -24,16 +32,17 @@ ul {
 
 /* Header */
 header {
-  background-color: #c3b1e1;
-  color: #ffffff;
   padding-top: 10px;
+  border: .5px solid lightgray;
 }
 
 header a {
-  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
+  color: #2c3229;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
 }
 
 header img {
@@ -45,7 +54,6 @@ header img {
 /* Navbar */
 .navbar {
   display: flex;
-  background-color: #c3b1e1;
   padding: 16px;
 }
 
@@ -119,12 +127,12 @@ header img {
 }
 
 .input-group button{
-  background-color: #c3b1e1;
-  color: #f2f2f2;
   font-size: 12px;
   border: none;
   cursor: pointer;
   margin-left: 5px;
+  color: gray;
+  background-color: white;
 } 
 
 /* Banner */
@@ -138,6 +146,15 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#login-error {
+  text-align: center;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  display: none;
 }
 
 /* Responsive Grid-View*/
@@ -160,6 +177,18 @@ header img {
   padding: 15px;
 }
 
+/* Page Title */
+.page-title {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Sort */
+.sort {
+  margin-top: 30px;
+  text-align: center;
+}
+
 /* Mobile settings. */
 [class*="col-"] {
   width: 100%;
@@ -169,7 +198,7 @@ header img {
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 24.5%;}
+  .col-s-3 {width: 25%;}
   .col-s-4 {width: 33.33%;}
   .col-s-5 {width: 41.66%;}
   .col-s-6 {width: 50%;}
@@ -185,7 +214,7 @@ header img {
   /* For desktop: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
-  .col-3 {width: 24.5%;}
+  .col-3 {width: 25%;}
   .col-4 {width: 33.33%;}
   .col-5 {width: 41.66%;}
   .col-6 {width: 50%;}
@@ -211,8 +240,8 @@ header img {
 
 /* Footer */
 .footer {
-  background-color: #c3b1e1;
-  color: #ffffff;
+  border-top: 0.5px solid lightgray;
+  color: #2c3229;
   padding: 20px 0 20px 0;
   margin-top: 30px;
 }
@@ -223,11 +252,20 @@ header img {
     margin-top: 18px;
 }
 
+.footer-titles {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+
+}
+
 .footer a {
-  color: #ffffff;
+  color: #2c3229;
   text-decoration: none;
 }
 
 .footer li {
   list-style: none;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }

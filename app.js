@@ -1,20 +1,17 @@
+const mysql = require('mysql');
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var mysql = require('mysql');
 var hbs = require('hbs');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-
 var app = express();
 
 require('dotenv').config();
 
-// database connection setup
-const pool = mysql.createConnection({
+const sqlConfig = mysql.createConnection ({
   user: process.env.DB_USER,
   password: process.env.DB_PASS,
   host: process.env.DB_HOST,
@@ -22,14 +19,8 @@ const pool = mysql.createConnection({
   database: process.env.DB_NAME
 });
 
-// creates pool to handle query requests
-pool.connect((err) => {
-  if(err) {
-    console.log('error has occured');
-    throw err;
-  }
-  console.log('Connect to Database');
-});
+// creates a pool to handle query requests.
+const pool = mysql.createPool(sqlConfig);
 
 // view engine setup
 hbs.registerPartials(path.join(__dirname, "views/partials"));
@@ -44,7 +35,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
