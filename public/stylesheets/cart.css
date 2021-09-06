@@ -1,0 +1,130 @@
+th, td {
+    text-align: left;
+    padding: 6px;
+    outline: 1px solid lightgray;
+}
+
+.empty-cart {
+    text-align: center;
+    display: none;
+}
+
+.cart-container {
+    margin-top: 60px;
+}
+
+.cart-container table {
+    max-width: 100%;
+    border-collapse: collapse;
+    margin:inherit;
+}
+
+.remove-product {
+  border: 1px solid red;
+}
+
+@media only screen and (max-width: 760px), 
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { 
+    border: 1px solid #ccc; 
+  }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+
+    td:nth-of-type(1):before { content: "" }
+    td:nth-of-type(2):before { content: "" }
+    td:nth-of-type(3):before { content: "Product"; }
+    td:nth-of-type(4):before { content: "Price"; }
+    td:nth-of-type(5):before { content: "Quantity"; }
+    td:nth-of-type(6):before { content: "Subtotal"; }
+}
+
+.product-quantity input[type="number"] {
+    width: 40%;
+}
+
+.checkout {
+	float: right;
+	border: 0;
+	margin-top: 20px;
+	padding: 6px 25px;
+	background-color: rgb(60, 177, 212);
+	color: #fff;
+	font-size: 25px;
+	border-radius: 3px;
+  }
+  
+.checkout:hover {
+	background-color: rgb(6, 168, 218);
+  }
+
+.product-image img{
+	max-width: 100%;
+	max-height: 100%;
+  }
+
+.fa-trash-alt{
+    color: red;
+  }
+
+label {
+  color: #aaa;
+}
+
+.totals .totals-item {
+  float: right;
+  clear: both;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.totals .totals-item label {
+  float: left;
+  clear: both;
+  width: 79%;
+  text-align: right;
+}
+
+.totals .totals-item .totals-value {
+  float: right;
+  width: 21%;
+  text-align: right;
+}
+
+.totals .totals-item-total{
+  font-family: bold;
+}
+
+/* Apply dollar signs */
+.totals-value:before {
+  content: '$';
+}

@@ -1,1 +1,69 @@
-This is the shopping cart
+{{> header}}
+
+<div class="u-align-center u-clearfix u-section-1" id="carousel_89ba">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <h1>SHOPPING</h1>
+        <div class="cart-container">
+            <table role="table">
+                <thead role="rowgroup">
+                    <tr role="row">
+                        <th role="columnheader" class="product-remove">Delete</th>
+                        <th role="columnheader" class="product-image">&nbsp;</th>
+                        <th role="columnheader" class="product-name">Product</th>
+                        <th role="columnheader" class="product-price">Price</th>
+                        <th role="columnheader" class="product-quantity">Quantity</th>
+                        <th role="columnheader" class="product-line-price">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody role="rowgroup">
+                    <tr role="row" class="product">
+                        <td role="cell" class="product-remove"><button class="remove-product"><i class="fas fa-trash-alt"></i></button></td>
+                        <td role="cell" class="product-image"><img  width="600" height="height" src="https://img.shop.com/Image/240000/249600/249626/products/1686371538.jpg" alt="Octopus Ocean Animal Bookend Pair Resin"></td>
+                        <td role="cell" class="product-name">Octopus Ocean Animal Bookend Pair Resin</td>
+                        <td role="cell" class="product-price">61.88</td>
+                        <td role="cell" class="product-quantity">
+                            <input type="number" value="1" min="1">
+                        </td>
+                        <td class="product-line-price">61.88</td>
+                    </tr>
+                    <tr role="row" class="product">
+                        <td role="cell" class="product-remove"><button class="remove-product"><i class="fas fa-trash-alt"></i></button></td>
+                        <td role="cell" class="product-image"><img  width="600" height="height" src="https://img.shop.com/Image/260000/260800/260874/products/1481472933__175x175__.jpg" alt="Octopus Spirit Decorative Antique Bronze Finish Statue and Glass Decanter Set"></td>
+                        <td role="cell" class="product-name">Octopus Spirit Decorative Antique Bronze Finish Statue and Glass Decanter Set</td>
+                        <td role="cell" class="product-price">109.80</td>
+                        <td role="cell" class="product-quantity">
+                            <input type="number" value="1" min="1">
+                        </td>
+                        <td class="product-line-price">109.80</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+            <div class="totals">
+                <div class="totals-item">
+                    <label>Subtotal</label>
+                    <div class="totals-value" id="cart-subtotal">177.68</div>
+                </div>
+                <div class="totals-item">
+                    <label>Tax (5%)</label>
+                    <div class="totals-value" id="cart-tax">8.88</div>
+                </div>
+                <div class="totals-item">
+                    <label>Shipping</label>
+                    <div class="totals-value" id="cart-shipping">15.00</div>
+                </div>
+                <div class="totals-item totals-item-total">
+                    <label>Grand Total</label>
+                    <div class="totals-value" id="cart-total">201.56</div>
+                </div>
+            </div>
+            <button class="checkout">Checkout</button>
+        </div>
+        <div id="empty-cart" class="empty-cart">
+            <div class="alert alert-danger mt-3"><h1>YOUR CART IS CURRENTLY EMPTY.</h1></div>
+            <a href="./"><h6>RETURN TO SHOP</h6></a>
+        </div>
+    </div>
+</div>
+
+{{> footer}}
