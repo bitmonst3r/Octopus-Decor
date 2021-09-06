@@ -1,3 +1,9 @@
+html {
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   padding: 0;
@@ -249,7 +255,7 @@ header img {
   color: lightgray;
 }
 
-/* Mobile settings. */
+/* Mobile settings - Footer Grid */
 [class*="col-"] {
   width: 100%;
 }
@@ -302,7 +308,7 @@ header img {
 .footer {
   border-top: 0.5px solid lightgray;
   color: #2c3229;
-  padding: 145px 0 30px;
+  padding: 120px 0 30px;
   margin-top: 30px;
 }
 
@@ -316,6 +322,7 @@ header img {
   font-family: 'Oswald', sans-serif;
   font-size: 22px;
   font-weight: 400;
+  padding-bottom: 10px;
 
 }
 
