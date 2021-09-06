@@ -210,10 +210,27 @@ header img {
   padding: 20px;
 }
 
+.sort-holder li.sort-category-1 a{
+  text-decoration: none;
+  color: #111111;
+}
+
+.sort-holder li.sort-category-1 a:hover {
+  color: lightgray;
+}
 
 .sort-holder li.sort-category-2 {
   border-left: 1px solid #dfdfdf;
   padding: 20px;
+}
+
+.sort-holder li.sort-category-2 a{
+  text-decoration: none;
+  color: #111111;
+}
+
+.sort-holder li.available a:hover {
+  color: lightgray;
 }
 
 .dropbtn {
