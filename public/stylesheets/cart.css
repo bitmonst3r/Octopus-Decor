@@ -96,10 +96,6 @@ th, td {
     color: red;
   }
 
-label {
-  color: #aaa;
-}
-
 .totals .totals-item {
   float: right;
   clear: both;
