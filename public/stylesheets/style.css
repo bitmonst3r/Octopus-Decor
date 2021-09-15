@@ -2,6 +2,9 @@ html {
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 body {
@@ -10,6 +13,8 @@ body {
   margin: 0;
   overflow: hidden;
   color: #40514E;
+  height: auto;
+  min-height: 100%;
 }
 
 a {
@@ -163,11 +168,7 @@ header img {
   align-items: center;
 }
 
-/* Responsive Grid-View*/
-* {
-  box-sizing: border-box;
-}
-
+/* Responsive Grid-View Footer*/
 .row {
   margin: 0.5%;
 }
