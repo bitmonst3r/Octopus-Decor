@@ -15,7 +15,7 @@ const pool = mysql.createPool(sqlConfig);
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: 'Octopus Decor' });
+  res.render("index", { title: 'Octopus Decor Store' });
 });
 
 /**
