@@ -87,15 +87,7 @@ ol {
 *:after {
   box-sizing: border-box;
 }
-html {
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-body {
-  height: auto;
-  min-height: 100%;
-}
+
 body,
 aside,
 .u-sidebar-block,
